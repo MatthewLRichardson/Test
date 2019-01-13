@@ -35,7 +35,7 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return view ('projects.upload', compact('user'));
     }
 
     /**

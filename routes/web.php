@@ -41,6 +41,15 @@ Route::post('/projects/{project}', 'ProjectsController@show');
 Route::get('/projects/create', 'ProjectsController@create');
 Route::get('/projects/{project}/edit', 'ProjectsController@edit');
 Route::patch('/projects/{project}', 'ProjectsController@update');
+Route::delete('/projects/{project}', 'ProjectsController@destroy');
+
+Route::get('/projects/upload', 'ProjectsController@upload');
+Route::get('/projects/slider', 'ProjectsController@slider');
+
+
+Route::post('/projects/upload', 'PostsController@show');
+//Route::post('/projects/create', 'XMLType@generate');
+//Route::get('/projects/upload', 'XMLType@index');
 
 
 
